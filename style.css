@@ -1,0 +1,268 @@
+body{
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik', sans-serif;
+overflow-x: hidden;
+
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    font-size: 60px;
+    background-color: rgb(228, 228, 228); 
+}
+.butBody{
+    background-color: rgb(41, 41, 41);
+width: 100vw;
+height: 100vh;
+display: flex;
+
+flex-grow: 1;
+}
+.buttons{
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+   flex-wrap: wrap;
+   display: flex;
+   height: 600px;
+   width: 900px;
+   
+}
+.but1{
+font-size: 35px;
+color: white;
+border: 2px solid black;
+padding: 30px;
+width: 340px;
+height: 200px;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(70, 188, 192);
+cursor: pointer;
+margin-top: 20px;
+}
+.but1:hover{
+    background-color: rgb(79, 214, 198);
+    
+}
+.but2:hover{
+    background-color: rgb(221, 50, 50);;
+}
+.mgen:hover{
+    background-color: rgb(153, 255, 151);
+}
+.wanted:hover{
+    background-color: rgb(255, 221, 27);
+}
+.but2{
+    margin-top: 20px;
+background-color: rgba(255, 51, 51, 0.719);
+
+}
+.wanted{
+   
+margin-top: 20px;
+
+background-color: rgb(216, 201, 71);
+}
+#calculadoraPage{
+display: none;
+width: 100vw;
+height: 100vh;
+background-color: white;
+position: fixed;
+top: 0px;
+left: 0px;
+}
+.container{
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 30px 16px rgb(202, 202, 202);
+}
+#display{
+    background-color: rgb(65, 65, 65);
+    color: white;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px;
+    font-size: 25px;
+}
+.buttonsCalc{
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.buttonsCalc > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+}
+.button{
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal{
+    background-color: rgb(64, 130, 218);
+   color: white;
+}
+#equal:hover{
+    background-color: rgb(60, 230, 211);
+}
+.button:hover{
+    background-color: rgb(128, 128, 128);
+    color: white;
+    transition: 0.5s ease;
+}
+.menuCalc{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 70px;
+  margin-right: 400px;
+}
+#exit{
+    background-color: tomato;
+    padding: 20px;
+    width: 50px;
+    display: flex;
+    font-size: 30px;
+    border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#exit:hover{
+    background-color: rgb(143, 56, 24);
+    cursor: pointer;
+    color: white;
+}
+@media screen and (max-width: 1000px){
+    .menuCalc{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    }
+    }
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 25px;
+    background-color: rgb(228, 228, 228);
+    bottom: 0;
+   
+}
+a{
+text-decoration: none;
+display: flex;
+
+justify-content: center;
+align-items: center;
+}
+.insta{
+    width: 40px;
+    margin-right: 10px;
+}
+.conversorPage{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+width: 100vw;
+background-color: rgba(0,0,0,.5);
+z-index: 2000;
+}
+.conversorPage.mostrar {
+    display: flex;
+}
+.popUp{
+display: flex;
+font-size: 30px;
+border: 1px solid black;
+padding: 70px;
+background-color: white;
+border-radius: 3px;
+position: relative;
+}
+.mgen{
+background-color: rgb(125, 202, 117);
+margin-top: 20px;
+}
+@keyframes popUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.mostrar .popUp{
+animation: popUp 0.3s;
+}
+@media screen and (max-width: 1000px){
+.but1{
+    width: 80px;
+    height: 100px;
+    font-size: 20px;
+}
+
+header{
+    font-size: 40px;
+}
+.buttons{
+    margin-top: auto;
+    margin-bottom: auto;
+   width: 300px;
+    height: 400px;
+}
+
+.container{
+    max-width: 300px;
+    margin: 5vh auto 0 auto;
+}
+#display{
+    height: 40px;
+   
+}
+.button{
+    border: 0.5px solid #999;
+    line-height: 80px;
+    font-size: 25px;
+}
+#exit{
+    padding: 15px;
+    width: 50px;
+    display: flex;
+    font-size: 30px;
+}
+.menuCalc{
+    margin-top: 40px;
+}
+.insta{
+    width: 40px;
+    margin-right: 10px;
+}
+
+}

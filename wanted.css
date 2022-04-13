@@ -1,0 +1,170 @@
+body{
+margin: 0;
+padding: 0;
+width: 100vw;
+height: 100vh;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: rgb(243, 243, 243);
+align-items: center;
+display: flex;
+justify-content: center;
+}
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 100px;
+width: 1300px;
+padding: 30px;
+
+}
+.box{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+   
+}
+h1{
+margin-left: auto;
+}
+.flex{
+   
+    padding: 35px;
+    display: flex;
+  
+    
+}
+.key{
+   align-items: center;
+   display: flex;
+   
+   margin-right: 20px;
+}
+button{
+    padding: 10px;
+    margin: 20px;
+}
+.cardContainer{
+    margin-left: 30px;
+position: relative;
+}
+.imgContainer{
+    width: 408px;
+    height: 295px;
+background-size: cover;
+position: absolute;
+top: 151px;
+left: 46px;
+filter:  rgb(65, 48, 26);
+filter: grayscale(80%);
+background-color: rgb(185, 185, 185);
+
+}
+.naruto{
+    font-family: 'Playfair Display', serif;
+    color: rgb(65, 48, 26, 0.9);
+    font-weight: bold;
+    line-height: 1;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    width: 380px;
+    left: 60px;
+    top: 500px;
+    position: absolute;
+    word-wrap: break-word;
+    
+}
+.recompensa{
+    width: 350px;
+    left: 100px;
+    top: 605px;
+    position: absolute;
+
+    color: rgb(65, 48, 26);
+    font-size: 30px;
+    font-family: 'Hubballi', cursive;
+}
+.wanted{
+    width: 500px;
+}
+a{
+  text-decoration: none;
+    
+}
+.exit{
+background-color: tomato;
+padding: 20px;
+width: 50px;
+display: flex;
+font-size: 30px;
+border-radius: 10px;
+margin-left: 100px;
+color: rgb(73, 71, 71);
+}
+.exit:hover{
+    cursor: pointer;
+    color: white;
+}
+@media screen and (max-width: 1000px){
+    .container{
+        margin-top: 750px;
+      margin-left: 115px;
+        display: flex;
+        width: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+      
+    
+    }
+    .cardContainer{
+        margin-left: 40px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    .box{
+        margin-right: 4px;
+    }
+    .wanted{
+       margin-right: 35px;
+        width: 450px;
+      
+    }
+    .imgContainer{
+        width: 368px;
+        height: 266px;
+    top: 136px;
+    left: 41px;
+    filter:  rgb(65, 48, 26);
+    filter: grayscale(80%);
+    
+    }
+    .naruto{
+        width: 340px;
+        left: 52px;
+        top: 450px;
+       
+        
+    }
+    .recompensa{
+        width: 300px;
+        left: 90px;
+        top: 545px;
+        
+        
+    }
+    .exit{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+        }
+}
